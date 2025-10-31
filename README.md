@@ -1,7 +1,7 @@
-#CinePeek 
+# CinePeek 
 A sleek, modern JavaFX desktop application for discovering fun facts about your favorite movies, powered by the TMDB API.
 
-##Features
+## Features
 
 - Sleek, Modern UI: A dark-themed, responsive interface built with JavaFX and CSS, based on Figma mockups.
 

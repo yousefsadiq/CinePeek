@@ -1,0 +1,185 @@
+.root {
+    -fx-background-color: #1a1a1a;
+    -fx-font-smoothing-type: gray;
+    -fx-font-family: "Inter", "Arial", sans-serif; /* Using Inter as a fallback */
+}
+
+.scroll-pane {
+    -fx-background-color: #1a1a1a;
+    -fx-font-family: "Inter", "Arial", sans-serif;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: #1a1a1a;
+    -fx-font-family: "Inter", "Arial", sans-serif;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: black;
+    -fx-padding: 3; /* Adds a little space */
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-pref-height: 0;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: black;
+    -fx-border-color: #222;
+    -fx-background-radius: 2em;
+    -fx-border-radius: 2em;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #333333;
+    -fx-background-radius: 2em;
+}
+
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #555555;
+}
+
+.label {
+    -fx-text-fill: #e0e0e0;
+}
+
+.header-bar {
+    -fx-background-color: #252525;
+}
+.header-label {
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f0f0f0;
+}
+.button {
+    -fx-background-color: #3e8bff;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 8 15 8 15;
+    -fx-cursor: hand;
+}
+.button:hover {
+    -fx-background-color: #5a9fff;
+}
+
+.title-label {
+    -fx-font-size: 3.5em;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(from 0% 0% to 100% 0%, #80ffc2, #3e8bff);
+}
+
+.search-box {
+    -fx-background-color: #2c2c2c;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-border-color: linear-gradient(from 0% 0% to 100% 0%, #80ffc2, #3e8bff);
+    -fx-border-width: 2;
+    -fx-padding: 5 5 5 15px;
+    -fx-max-width: 500;
+}
+
+.search-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: #e0e0e0;
+    -fx-font-size: 1.2em;
+    -fx-prompt-text-fill: #757575;
+}
+
+.search-box .button {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #60d6a0, #3e8bff);
+}
+
+.search-box .button:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #70e6b0, #5a9fff);
+}
+
+.loading-pane {
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+}
+
+.result-card {
+    -fx-background-color: #2c2c2c;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: linear-gradient(from 0% 0% to 100% 0%, #80ffc2, #3e8bff);
+    -fx-border-width: 1;
+    -fx-padding: 10;
+    -fx-max-width: 100;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 5);
+}
+.result-card:hover {
+    -fx-border-color: linear-gradient(from 0% 0% to 100% 0%, #70e6b0, #5a9fff);
+    -fx-effect: dropshadow(gaussian, rgba(62, 139, 255, 0.5), 15, 0, 0, 5);
+}
+
+.header-bar .button {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #60d6a0, #3e8bff);
+    -fx-padding: 5;
+}
+
+.header-bar .button:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #70e6b0, #5a9fff);
+}
+
+.header-bar.label {
+    -fx-padding: 15;
+}
+
+.poster-placeholder {
+    -fx-background-color: #3a3a3a;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-alignment: center;
+}
+
+.poster-image {
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-max-height: 150;
+}
+
+.poster-title {
+    -fx-font-size: 1em;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f0f0f0;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+.fact-card, .fact-card-restart {
+    -fx-background-color: #2c2c2c;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-border-color: linear-gradient(from 0% 0% to 100% 0%, #80ffc2, #3e8bff);
+    -fx-border-width: 2;
+    -fx-padding: 25;
+    -fx-max-width: 300;
+    -fx-max-height: 500;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 20, 0, 0, 10);
+    -fx-translate-y: 5;
+    -fx-translate-x: 5;
+}
+
+.fact-card-restart {
+    -fx-alignment: center;
+    -fx-border-style: dashed;
+    -fx-border-color: #777;
+}
+
+.fact-card-title, .fact-card-intro {
+    -fx-font-size: 1.5em;
+    -fx-text-fill: #e0e0e0;
+}
+
+.fact-card-value {
+    -fx-font-size: 2.5em;
+    -fx-font-weight: bold;
+    -fx-text-fill: #80ffc2;
+    -fx-wrap-text: true;
+}
+

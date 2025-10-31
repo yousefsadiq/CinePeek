@@ -1,54 +1,56 @@
-CinePeek 
+#CinePeek 
+A sleek, modern JavaFX desktop application for discovering fun facts about your favorite movies, powered by the TMDB API.
 
-Features
+##Features
 
-Sleek, Modern UI: A dark-themed, responsive interface built with JavaFX and CSS, based on Figma mockups.
+- Sleek, Modern UI: A dark-themed, responsive interface built with JavaFX and CSS, based on Figma mockups.
 
-Movie Search: Instantly search the entire TMDB database for any movie.
+- Movie Search: Instantly search the entire TMDB database for any movie.
 
-Top 6 Results: View the top 6 most relevant movies with their official posters in a clean, scrollable layout.
+- Top 6 Results: View the top 6 most relevant movies with their official posters in a clean, scrollable layout.
 
-Fun Fact Deck: Click a movie to view an interactive "deck" of fun fact cards.
+- Fun Fact Deck: Click a movie to view an interactive "deck" of fun fact cards.
 
-Dynamic Data: Get real-time data for:
+- Dynamic Data: Get real-time data for:
 
-Worldwide Revenue
+  - Worldwide Revenue
+  
+  - Production Budget
+  
+  - Movie Runtime
+  
+  - Release Date 
 
-Production Budget
+## How It Works
 
-Movie Runtime
+- Search: Start the app and type a movie title (e.g., "Inception") into the search bar.
 
-Release Date 
+- Select: The app displays the top 6 results. Click the poster of the movie you're curious about.
 
-How It Works
+- Peek: A deck of cards appears! Click the top card to "draw" it and send it flying off-screen, revealing the next fact underneath.
 
-Search: Start the app and type a movie title (e.g., "Inception") into the search bar.
+## Tech Stack
 
-Select: The app displays the top 6 results. Click the poster of the movie you're curious about.
+- Language: Java 
 
-Peek: A deck of cards appears! Click the top card to "draw" it and send it flying off-screen, revealing the next fact underneath.
+- Framework: JavaFX 
 
-Tech Stack
+- Build: Apache Maven
 
-Language: Java 
+- API: The Movie Database (TMDB) API
 
-Framework: JavaFX 
+- Libraries:
 
-Build: Apache Maven
+  - Google Gson - For parsing JSON responses from the API.
+  
+  - java-dotenv - For secure management of the API key.
 
-API: The Movie Database (TMDB) API
+## Design: 
+Built with an MVC (Model-View-Controller) pattern using FXML and a central SceneManager for navigation.
 
-Libraries:
+## How to run
 
-Google Gson - For parsing JSON responses from the API.
-
-java-dotenv - For secure management of the API key.
-
-Design: Built with an MVC (Model-View-Controller) pattern using FXML and a central SceneManager for navigation.
-
-Getting Started
-
-To get a local copy up and running, follow these simple steps.
+To get a local copy up and running, follow these simple steps:
 
 Prerequisites
 
@@ -77,7 +79,7 @@ Note: Make sure this is the "API Read Access Token" (Bearer Token) and not the s
 
 Run the main method in the Main class
 
-Acknowledgments
+## Acknowledgments
 
 This application uses the TMDB API but is not endorsed or certified by TMDB.
 
